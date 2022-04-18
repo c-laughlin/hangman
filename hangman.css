@@ -1,0 +1,122 @@
+    .hidden {
+        display: none !important;
+    }
+
+    body {
+        font-family: Arial;
+    }
+
+    .new-game {
+        height: 3vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .new-game * {
+        font-size: 16px;
+    }
+
+    .hangman {
+        display: flex;
+        flex-flow: column wrap;
+        height: calc(95vh - 2rem - 2px);
+    }
+
+    .hangman,
+    .letters,
+    .board {
+        margin: 1rem;
+    }
+
+    .board { 
+        flex: 5; 
+        display: flex;
+    }
+
+    .letters {
+        flex: 5;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .letters > button {
+        border: 1px solid gainsboro;
+        border-radius: 0.5rem;
+        margin: 0.3rem;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color:rgb(7, 133, 133);
+        background-color: white;
+        cursor: pointer;
+        width: 7rem;
+        height: 7rem;
+        transition: linear 0.1s background-color;
+    }
+
+    .letters > button:hover {
+        background-color: gainsboro;
+        font-size: 36px;
+    }
+
+    .man {
+        border: 1px solid gainsboro;
+        border-radius: 0.5rem;
+        margin: 1rem;
+    }
+
+    .guess-wrapper {
+        flex: 7;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .word, .wrong {
+        font-size: 36px;
+    }
+
+    .subtitle, .word, .wrong, .letter-count {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .word { flex: 6; }
+
+    .letter-count{ 
+        flex: 1;
+        font-size: 20px;
+    }
+
+    .wrong { flex: 2; }
+    .man { flex: 3; }
+
+    .word > div {
+        padding: 0.5rem;
+        cursor: help;
+    }
+
+
+    .game-win { color: darkgreen; }
+    .game-over { color: red; }
+
+    button.game-over {
+        cursor: not-allowed !important;
+        background-color: white !important;
+        font-size: 24px !important;
+        color:rgb(7, 133, 133);
+    }
+
+    .subtitle{
+        flex: 1;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: underline;
+        align-items: flex-end !important; 
+    }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link href="hangman.css" rel="stylesheet" >
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="hangman.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="new-game">
+            New Word:
+            <input id="begin-word" type="text" />
+            <button id="begin">Begin</button>
+            <button id="randomWord">Random Word</button>
+        </div>
+        <div class="hangman">
+            <div class="board">
+                <div class="guess-wrapper">
+                    <div class="word">
+                        <div>H</div>
+                        <div class="missing">_</div>
+                        <div>N</div>
+                        <div>G</div>
+                        <div>M</div>
+                        <div class="missing">_</div>
+                        <div>N</div>
+                    </div>
+                    <div class="letter-count">
+                        7 Letters
+                    </div>
+                    <div class="subtitle">WRONG FUCKING LETTERS</div>
+                    <div class="wrong">
+                        T, H, C
+                    </div>
+                </div>
+                <div class="man">
+                    <img src="img\L6.png" />
+                </div>
+            </div>
+            <div class="letters">
+                <button>A</button>
+                <button>B</button>
+                <button>C</button>
+                <button>D</button>
+                <button>E</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>I</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+                <button>M</button>
+                <button>N</button>
+                <button>O</button>
+                <button>P</button>
+                <button>Q</button>
+                <button>R</button>
+                <button>S</button>
+                <button>T</button>
+                <button>U</button>
+                <button>V</button>
+                <button>W</button>
+                <button>X</button>
+                <button>Y</button>
+                <button>Z</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
