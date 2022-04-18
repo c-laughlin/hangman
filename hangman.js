@@ -5,7 +5,7 @@ const RANDOM_WORDS = [];
 $(() => {
     $.ajax({
         type: "GET",
-        url: "rand_words2.csv",
+        url: "rand_words.csv",
         dataType: "text",
         success: function(data) {
             let endOfWord = data.indexOf(",");
