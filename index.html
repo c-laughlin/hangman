@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
+    <link href="common.css" rel="stylesheet" >
     <link href="hangman.css" rel="stylesheet" >
     <script src="jquery-3.6.0.min.js"></script>
     <script src="hangman.js" defer></script>
@@ -12,10 +13,10 @@
 <body>
     <div class="container">
         <div class="new-game">
-            New Word:
-            <input id="begin-word" type="text" />
+            <div>New Word:</div>
+            <input id="begin-word" type="text" /><br/>
             <button id="begin">Begin</button>
-            <button id="randomWord">Random Word</button>
+            <button id="randomWord">Random</button>
         </div>
         <div class="hangman">
             <div class="board">

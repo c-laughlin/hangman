@@ -1,0 +1,107 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.new-game {
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+
+.hangman {
+    display: flex;
+    flex-flow: column wrap;
+    height: 90vh;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.guess-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.subtitle, .word, .wrong, .letter-count {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.word > div {
+    padding: 0.5rem;
+    cursor: help;
+}
+
+.letter-count{ 
+    flex: 1;
+}
+
+.game-win { color: darkgreen; }
+.game-over { color: red; }
+
+button.game-over {
+    cursor: not-allowed !important;
+    background-color: white !important;
+    font-size: 24px !important;
+    color:rgb(7, 133, 133);
+}
+
+.subtitle{
+    flex: 1;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+    align-items: flex-end !important; 
+}
+
+.letters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.letters > button {
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:rgb(7, 133, 133);
+    background-color: white;
+    cursor: pointer;
+    transition: linear 0.1s background-color;
+}
+
+.letters > button:hover {
+    background-color: gainsboro;
+    font-size: 36px;
+}
+
+.man {
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.man img { 
+    width: 100%;
+    height: 100%;
+}
+
