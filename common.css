@@ -1,5 +1,6 @@
 body {
     font-family: Arial;
+    margin: 0;
 }
 
 .container {
@@ -10,20 +11,20 @@ body {
 }
 
 .new-game {
-    width: 100%;
+    margin: 5px;
+    width: calc(100% - 5px);
     height: 8vh;
     text-align: center;
-    border: 1px solid black;
     overflow: auto;
 }
 
 
 .hangman {
+    margin: 5px;
     display: flex;
     flex-flow: column wrap;
     height: 90vh;
     overflow: hidden;
-    border: 1px solid red;
 }
 
 .guess-wrapper {
